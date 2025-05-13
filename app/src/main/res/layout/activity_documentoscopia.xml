@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="24dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textViewTituloDocumento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Análise Documentos"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.05"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Card com sombra suave e borda preta -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardImagemDocumento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="#000000"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/textViewTituloDocumento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="0dp">
+
+        <!-- Frame com fundo gradiente (sombra interna e externa suaves) -->
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="240dp"
+            android:background="@drawable/sombra_total_card"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/documentoscopia0"
+                android:scaleType="centerInside"
+                android:contentDescription="Documento enviado" />
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Botão de Validação -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnValidarDocumentoscopia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="VALIDAR DOCUMENTO"
+        style="@style/GreenButton"
+        app:layout_constraintTop_toBottomOf="@id/cardImagemDocumento"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Resultado -->
+    <TextView
+        android:id="@+id/txtResultadoDocumentoscopia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#E0E0E0"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintTop_toBottomOf="@+id/btnValidarDocumentoscopia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

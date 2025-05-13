@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.com.antifraude">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/simbolo_quod"
+        android:icon="@drawable/simbolo_quod"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:targetApi="31">
+
+
+
+
+
+        <activity
+            android:name=".ui.cadastro.AutenticacaoCadastralActivity"
+            android:label="Autenticação Cadastral"
+            android:theme="@style/AppTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.resultado.ResultadoActivity"
+            android:label="Resultado Final"
+            android:theme="@style/AppTheme"/>
+
+
+
+    <activity
+        android:name=".ui.simswap.SimSwapActivity"
+        android:label="SIM Swap"
+        android:theme="@style/AppTheme"/>
+
+
+    <activity
+        android:name=".ui.biometria.BiometriaFacialActivity"
+        android:label="Biometria Facial"
+        android:theme="@style/AppTheme"/>
+
+
+    <activity
+        android:name=".ui.score.ScoreActivity"
+        android:label="Score Antifraude"
+        android:theme="@style/AppTheme"/>
+
+
+    <activity
+        android:name=".ui.documentoscopia.DocumentoscopiaActivity"
+        android:label="Documentoscopia"
+        android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".ui.biometria.BiometriaDigitalActivity"
+            android:label="Biometria Digital"
+            android:theme="@style/AppTheme"/>
+    </application>
+</manifest>
+
+
+
+
+
+
+
+
+
+

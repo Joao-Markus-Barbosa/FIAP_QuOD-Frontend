@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <style name="Theme.AppAntifraude" parent="Theme.MaterialComponents.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Cor de fundo da tela &ndash;&gt;-->
+<!--        <item name="android:windowBackground">#121212</item>-->
+<!--        <item name="android:colorBackground">#121212</item>-->
+
+<!--        &lt;!&ndash; Paleta de cores &ndash;&gt;-->
+<!--        <item name="colorPrimary">#008c3a</item>-->
+<!--        <item name="colorPrimaryVariant">#005c2a</item>-->
+<!--        <item name="colorOnPrimary">#FFFFFF</item>-->
+<!--        <item name="colorSecondary">#03DAC5</item>-->
+<!--        <item name="colorOnSecondary">#000000</item>-->
+
+<!--        &lt;!&ndash; Texto e interface &ndash;&gt;-->
+<!--        <item name="android:textColor">#FFFFFF</item>-->
+<!--        <item name="android:statusBarColor">#000000</item>-->
+<!--        <item name="android:navigationBarColor">#000000</item>-->
+
+<!--        &lt;!&ndash; Retirar ActionBar &ndash;&gt;-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+
+<!--        &lt;!&ndash; Forçar modo escuro &ndash;&gt;-->
+<!--        <item name="android:forceDarkAllowed">false</item>-->
+<!--    </style>-->
+</resources>
+

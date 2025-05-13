@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/textTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autenticar Cliente"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp"
+            android:importantForAccessibility="yes" />
+
+        <!-- CPF -->
+        <EditText
+            android:id="@+id/edtCpf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CPF"
+            android:inputType="number"
+            android:background="@drawable/bg_input"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="sans-serif" />
+
+        <!-- Nome -->
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome completo"
+            android:background="@drawable/bg_input"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="sans-serif" />
+
+        <!-- Endereço -->
+        <EditText
+            android:id="@+id/edtEndereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Endereço"
+            android:background="@drawable/bg_input"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="sans-serif" />
+
+        <!-- Telefone -->
+        <EditText
+            android:id="@+id/edtTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone com DDD"
+            android:inputType="phone"
+            android:background="@drawable/bg_input"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="sans-serif" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/bg_input"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:padding="18dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif" />
+
+        <!-- Botão Cadastrar -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VALIDAR AUTENTICAÇÃO"
+            style="@style/GreenButton"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Resultado do cadastro -->
+        <TextView
+            android:id="@+id/txtResultadoCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#E0E0E0"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+

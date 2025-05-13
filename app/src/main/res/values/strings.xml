@@ -1,0 +1,11 @@
+
+    <resources>
+        <string name="app_name">AppAntifraude</string>
+
+        <!-- DocumentoActivity -->
+        <string name="hint_cpf">CPF</string>
+        <string name="hint_imagem_documento">Imagem do Documento (Base64)</string>
+        <string name="hint_imagem_selfie">Imagem Selfie (Base64)</string>
+        <string name="btn_validar_documento">Validar Documento</string>
+    </resources>
+

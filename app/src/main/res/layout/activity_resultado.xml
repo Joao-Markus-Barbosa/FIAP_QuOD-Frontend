@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textTituloResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado Final da Análise"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/txtEtapas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coletando suas leituras..."
+            android:textColor="#E0E0E0"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif" />
+
+        <ImageView
+            android:id="@+id/imgResultado"
+            android:layout_width="240dp"
+            android:layout_height="180dp"
+            android:src="@drawable/simbolo_quod"
+            android:scaleType="centerInside"
+            android:contentDescription="Imagem de resultado"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/txtStatusFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#E0E0E0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFinalizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FINALIZAR"
+            style="@style/GreenButton"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</ScrollView>
+
+
